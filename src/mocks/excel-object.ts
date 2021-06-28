@@ -1,0 +1,46 @@
+let excelObjectModel = {
+  info: {
+    title: 'Excel',
+    width: 0,
+    height: 0,
+    left: 60,
+    top: 25
+  },
+  config: {
+    merge: []
+  },
+  // 选择的区域
+  selection_board: {
+    width: 0,
+    height: 0,
+    left: 0,
+    top: 0,
+    activeRows: [],
+    activeColums: []
+  },
+  setting_def: {
+    width: 60,
+    height: 20,
+    rowTitleHeight: 25,
+    columTitleDefWidth: 30
+  },
+  setting_custome: {
+    row: [
+      20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
+      20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20,
+      20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 2020, 20, 20, 20, 20, 20, 20, 20, 20
+    ],
+    rowTops: [],
+    column: [
+      60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60,
+      60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60
+    ],
+    columnLefts: []
+    // row:[20,20,20,20,20,20,20,20,20,20,20,20],
+    // rowTops:[],
+    // column:[60,60,60,60,60,60,60,60,60,60,60],
+    // columnLefts:[]
+  }
+};
+
+export { excelObjectModel };

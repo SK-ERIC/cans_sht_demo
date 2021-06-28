@@ -8,6 +8,7 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
+    "strictNullChecks": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
@@ -22,5 +23,6 @@
   },
   "include": [
     "src"
-  ]
+  ],
+  "extends": "./tsconfig.extend.json"
 }
