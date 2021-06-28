@@ -4,6 +4,7 @@ import { excelStateModel } from '@mocks/excel-state';
 import { excelItemModel } from '@mocks/excel-item';
 import { excelDataModel } from '@mocks/excel-data';
 import '@styles/sheet-content.less';
+import { DataProxy, Sheet } from '@src/utils/data_proxy';
 
 const Excel: React.FC = () => {
   const excelRef = useRef<HTMLCanvasElement>(null);
@@ -17,6 +18,13 @@ const Excel: React.FC = () => {
       setClientRect(excelRef.current.getBoundingClientRect());
     }
   }, [excelRef.current, excelObjectModel, excelDataModel, excelItemModel]);
+
+  useEffect(() => {
+    if (excelRef.current) {
+      const data = new DataProxy('sheet-test', {});
+      const sheet = new Sheet(excelRef.current, data);
+    }
+  }, [excelRef.current]);
 
   return (
     <div className={'excel'}>

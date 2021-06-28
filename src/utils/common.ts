@@ -296,3 +296,12 @@ export function isImagePatternObject(value: any): value is ImagePatternObject {
 export function isRegExp(value: unknown): value is RegExp {
   return objToString.call(value) === '[object RegExp]';
 }
+
+
+export function rangeSum(min:number, max:number, getv:Function) {
+  let s = 0;
+  for (let i = min; i < max; i += 1) {
+    s += getv(i);
+  }
+  return s;
+}
